@@ -1,0 +1,159 @@
+.page-footer {
+  text-align: center;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page-footer .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff99;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+.container-address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.container-address .mail {
+  margin-bottom: 8px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.title-footer {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-top: auto;
+}
+
+.logo-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  margin-top: 0px;
+}
+
+.logo-footer {
+  display: inline-block;
+}
+
+.studio-footer {
+  color: #ffffff;
+}
+
+.studio-header {
+  color: var(--title-color);
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+  }
+}
+
+.footer-list-icon {
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-list-link {
+    margin-bottom: 0px;
+  }
+  .container-address {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .social-list-icon-footer {
+    margin-left: 165px;
+    margin-bottom: auto;
+  }
+  .subscribe-text {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    display: flex;
+  }
+
+  .container-footer {
+    display: flex;
+    align-items: start;
+  }
+
+  .social-list-icon-footer {
+        margin-left: 70px;
+        margin-top: 12px;
+        margin-bottom: auto;
+      }
+
+.title-footer {
+    text-align: start;
+}
+.logo-footer {
+    display: flex;
+
+}
+.container-address {
+   text-align: start;
+}
+.container-address .mail {
+  margin-bottom: 9px;
+}
+.address {
+  margin-bottom: 9px;
+}
+
+}

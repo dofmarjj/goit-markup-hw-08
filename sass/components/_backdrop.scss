@@ -1,0 +1,235 @@
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.button-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+    border-color: var(--brand-color);
+  }
+}
+
+.backdrop-form-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+  margin-bottom: 12px;
+}
+
+.backdrop-input-wrupper {
+  position: relative;
+}
+
+.backdrop-icon {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-label {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  outline: transparent;
+}
+
+.backdrop-form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  color: var(--brand-color);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:focus {
+    border-color: var(--brand-color);
+    outline: none;
+  }
+}
+
+.backdrop-form-input:focus + .backdrop-icon {
+  fill: var(--brand-color);
+  cursor: pointer;
+}
+
+.backdrop-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        border-color: var(--brand-color);
+        outline: none;
+    }
+
+}
+
+
+
+.backdrop-send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  color: #ffffff;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 4px;
+&:hover,
+&:focus {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.backdrop-label-check {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+&:before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 1px solid rgba(33, 33, 33, 1);
+        cursor: pointer;
+        margin-right: 7px;
+    }
+}
+
+.checkbox-form {
+  display: flex;
+  justify-content: center;
+}
+
+.backdrop-checkbox-contract {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--brand-color);
+}
+
+.checkbox-form-input:checked + .backdrop-label-check:before {
+  background-image: url(../images/iconcheck.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid var(--brand-color);
+}
+
+.checkbox-form-input:focus + .backdrop-label-check:before {
+  border-color: 1px solid #2196f3;
+}
+
+
+@media screen and (max-width: 1199px)  {
+  .modal {
+      width: 450px;
+      min-height: 609px;
+    }
+
+.backdrop-label-check {
+  font-size: 12px;
+  }
+  
+ .backdrop-checkbox-contract {
+   font-size: 12px;
+   }
+
+}
+
