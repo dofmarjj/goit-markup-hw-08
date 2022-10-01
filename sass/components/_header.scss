@@ -240,15 +240,14 @@
   line-height: 14px;
   letter-spacing: 0.02em;
   color: #757575;
+  fill: gray;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
+    fill: #2196f3;
     color: var(--brand-color);
   }
 }
@@ -260,6 +259,7 @@
 .auth-nav__tel-icon {
   margin-right: 8px;
 }
+
 
 // =============comp-monitor=============
 
