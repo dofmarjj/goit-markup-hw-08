@@ -8,7 +8,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff99;
+  // color: #fff;
   text-decoration: none;
   letter-spacing: 0.03em;
 
@@ -20,10 +20,42 @@
 .container-address {
   margin-top: 20px;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.container-address .mail {
-  margin-bottom: 8px;
+.information__addrres {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.mail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .address {
@@ -134,26 +166,21 @@
   }
 
   .social-list-icon-footer {
-        margin-left: 70px;
-        margin-top: 12px;
-        margin-bottom: auto;
-      }
+    margin-left: 70px;
+    margin-top: 12px;
+    margin-bottom: auto;
+  }
 
-.title-footer {
+  .title-footer {
     text-align: start;
-}
-.logo-footer {
+  }
+  .logo-footer {
     display: flex;
-
-}
-.container-address {
-   text-align: start;
-}
-.container-address .mail {
-  margin-bottom: 9px;
-}
-.address {
-  margin-bottom: 9px;
-}
-
+  }
+  .container-address {
+    text-align: start;
+  }
+  .address {
+    margin-bottom: 9px;
+  }
 }

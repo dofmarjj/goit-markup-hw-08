@@ -554,7 +554,7 @@
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
-                <svg class="clients-list-icon" width="106x" height="60px">
+                <svg class="clients-list-icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo4"></use>
                 </svg>
               </a>
@@ -582,10 +582,17 @@
             </a>
             <address>
               <div class="container-address">
-                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                <a
+                  href="https://goo.gl/maps/YcwKjtUMhhWeg9k17"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="information__addrres link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+
                 <a class="link mail" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
-                ><br />
+                >
                 <a class="link tel" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
@@ -703,7 +710,26 @@
             </textarea>
           </label>
 
-          <div class="checkbox-form">
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="modal-check"
+              value="true"
+              class="modal-check visually-hidden"
+              id="modal-check"
+            />
+            <label for="modal-check" class="text-check">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp
+              <a href="#" class="text-policy">Условия договора</a></label
+            >
+          </div>
+
+          <!-- <div class="checkbox-form">
             <input
               id="checkbox-contract"
               class="checkbox-form-input"
@@ -715,7 +741,7 @@
               Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="" class="backdrop-checkbox-contract">Условия договора</a>
             </label>
-          </div>
+          </div> -->
 
           <button type="submit" class="backdrop-send-btn">Отправить</button>
         </form>
